@@ -1,0 +1,10 @@
+
+<ul class="list-group list-group-flushv">
+  <li class="list-group-item active">List of CV</li>
+  <app-item-cv
+    *ngFor= " let personEach of Personnes"
+    [dataPersonneItem]="personEach"
+  >
+  </app-item-cv>
+</ul>
+

@@ -1,0 +1,16 @@
+<div class="alert alert-success text-center">
+  <h3>CV <strong>{{person.name}} {{person.firstname}}</strong></h3>
+</div>
+<img class="rounded mx-auto d-block" src="assets/images_card/{{person.path|defaultImage}}" alt="Card image cap" height="150px" width="200px">
+<div class="col-md-9 text-center block-info">
+  <ul class="list-group list-group-flush my-4">
+    <li class="list-group-item"><strong>Name :</strong> {{person.name}}</li>
+    <li class="list-group-item"><strong>FirstName :</strong>  {{person.firstname}}</li>
+    <li class="list-group-item"><strong>Job:</strong> {{person.job}}</li>
+    <li class="list-group-item"><strong>Age :</strong> {{person.age}}</li>
+    <li class="list-group-item"><strong>CIN :</strong> {{person.cin}}</li>
+  </ul>
+  <button type="button" (click)="deletePersonne()" class="btn btn-danger">Delete</button>
+</div>
+
+

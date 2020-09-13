@@ -1,0 +1,65 @@
+<div class="col-md-6 col-md-12 form">
+  <form  #personForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        ngModel
+        required
+        name="name"
+        id="nameInput"
+        type="text"
+        class="form-control"
+       >
+    </div>
+    <div class="form-group">
+      <label for="prenomInput">FirstName</label>
+      <input
+        ngModel
+        required
+        name="firstname"
+        id="prenomInput"
+        type="text"
+        class="form-control"
+       >
+    </div>
+    <div class="form-group">
+      <label for="jobInput">Job</label>
+      <input
+        required
+        ngModel
+        name="job"
+        id="jobInput"
+        type="text"
+        class="form-control"
+       >
+    </div>
+    <div class="form-group">
+      <label for="ageInput">Age</label>
+      <input
+        required
+        ngModel
+        name="age"
+        id="ageInput"
+        type="number"
+        class="form-control"
+       >
+    </div>
+    <div class="form-group">
+      <label for="ageInput">CIN</label>
+      <input
+        required
+        ngModel
+        name="cin"
+        id="cinInput"
+        type="number"
+        class="form-control"
+       >
+    </div>
+  </form>
+  <button [disabled]="personForm.invalid"
+          class="btn btn-primary"
+          (click)="add(personForm.value)"
+  >
+    Add Personne
+  </button>
+</div>

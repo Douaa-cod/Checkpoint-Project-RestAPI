@@ -1,0 +1,17 @@
+<div class="col-md-12"
+    *ngIf="embauches.length"
+>
+  <h3>Liste des CVs séléctionner pour embaucher</h3>
+  <div class="row embauche">
+    <div class="col-md-3" class="embauchPersonne" *ngFor="let personne of embauches">
+      <h5 class="name">{{personne.firstname}} {{personne.name}}</h5>
+      <img src="assets/images_card/{{personne.path|defaultImage}}"
+           alt="{{personne.name}}"
+           width="50px"
+           height="50px"
+           class="rounded-circle"
+      >
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+.embauche{
+  padding: 15px;
+  border: 1px solid #007bff;
+  border-radius: 25px;
+}
+.embauchPersonne{
+  margin-right: 20px;
+}
+.name {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+  text-transform: capitalize;
+  color: #444444;
+}
